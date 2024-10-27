@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency Checklist</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <h1>Cryptocurrency Checklist</h1>
+
+    <table id="currency-table">
+        <thead>
+            <tr>
+                <th>Cryptocurrency</th>
+                <th>Symbol</th>
+                <th>Price (USD)</th>
+                <th>% Daily Change</th>
+                <th>Volume</th>
+                
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+ 
+    <form id="tradingJournal" class="divisions" >
+        <h2>Trading Journal</h2>
+        <label for="tradeDate">Date:</label>
+        <input type="datetime-local" id="tradeDate" name="tradeDate" required>
+
+        <label for="cryptoCurrency">Crypto:</label>
+        <input type="text" name="cryptoCurrency" id="cryptoCurrency" required>
+
+        <label for="tradeType">Limit Order:</label>
+        <select name="tradeType" id="tradeType" required>
+            <option value="">Select...</option>
+            <option value="buy">Buy</option>
+            <option value="sell">Sell</option>
+            <option value="buyStop">Buy Stop</option>
+            <option value="sellStop">Sell Stop</option>
+            <option value="buyLimit">Buy Limit</option>
+            <option value="sellLimit">Sell Limit</option>
+        </select>
+
+        <input type="text"name='notes' id="notes" placeholder="notes...">
+
+        
+        <button type="submit">Submit</button>
+       
+    </form>
+    <div id="savedEntries" class="divisions">
+        <h3>Saved Entries</h3>
+        <button id="clear">Clear Entries</button>
+        
+        <ul id="entryList"></ul> <!-- List to display entries -->
+    </div>
+    
+
+    <script src="index.js" defer></script>
+
+</body>
+</html>

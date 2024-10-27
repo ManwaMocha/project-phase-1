@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Reset margin */
+    padding: 20px; /* Use padding for spacing */
+    background-color: #ddeedf;
+    overflow: auto; /* Allow scrolling */
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr; /* Single-column layout */
+    gap: 10px;
+    max-width: 400px;
+    margin: 20px auto; /* Center the form */
+    
+    padding: 30px;
+    border: 2px solid #45a049; /* Outline color */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #9fd3c7; /* Form background color */
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #0a0a0a;
+    border-radius: 4px; /* Rounded corners for inputs */
+    width: 100%; /* Full width for inputs */
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    width: 100%; /* Full width for the button */
+}
+#clear{
+   width: 200px
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#crypto-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#currency-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#currency-table th, #currency-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    margin: 20px auto; /* Center the form */
+    
+    
+    background-color: #9fd3c7; /* Form background color */
+}
+
+#currency-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+.hidden{
+    display: none;
+}
+
+#notes{
+    margin-right: 20px;
+    height: 100px
+}
+#savedEntries{
+    margin: 20px auto; 
+    
+    padding: 30px;
+    border: 2px solid #45a049; /* Outline color */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #9fd3c7; /*background color */
+}
